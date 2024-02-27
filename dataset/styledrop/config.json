@@ -1,0 +1,9 @@
+{
+    "style":{
+        "images" : ["dataset/styledrop/style.jpg"],
+        "test_images": ["dataset/styledrop/style.jpg"],
+        "prompts": ["A person working on a laptop in flat cartoon illustration style"],
+        "identifier": "in flat cartoon illustration style",
+        "class": "in flat cartoon illustration style"
+    }
+}

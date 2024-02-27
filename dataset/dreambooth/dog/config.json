@@ -1,0 +1,31 @@
+{
+    "dreambooth": {
+        "images":["dataset/dreambooth/dog/00.jpg","dataset/dreambooth/dog/01.jpg","dataset/dreambooth/dog/02.jpg", "dataset/dreambooth/dog/03.jpg","dataset/dreambooth/dog/04.jpg"],
+        "prompts": ["a photo of sks dog","a photo of sks dog","a photo of sks dog","a photo of sks dog","a photo of sks dog"],
+        "test_images": ["dataset/dreambooth/dog/00.jpg","dataset/dreambooth/dog/01.jpg","dataset/dreambooth/dog/02.jpg", "dataset/dreambooth/dog/03.jpg","dataset/dreambooth/dog/04.jpg"],
+        "identifier": "sks dog",
+        "class": "dog"
+    },    
+    "full_ti": {
+        "images":["dataset/dreambooth/dog/00.jpg","dataset/dreambooth/dog/01.jpg","dataset/dreambooth/dog/02.jpg", "dataset/dreambooth/dog/03.jpg","dataset/dreambooth/dog/04.jpg"],
+        "prompts": [
+            "a closed-up photo of a <dog> in front of trees, macro style",
+            "a low-angle photo of a <dog> sitting on a ledge in front of blossom trees, macro style",
+            "a photo of a <dog> sitting on a ledge in front of red wall and tree, macro style",
+            "a photo of side-view of a <dog> sitting on a ledge in front of red wall and tree, macro style",
+            "a photo of a <dog> sitting on a street, in front of lush trees, macro style"
+        ],
+        "base_prompts": [
+            "a closed-up photo of a dog in front of trees, macro style",
+            "a low-angle photo of a dog sitting on a ledge in front of blossom trees, macro style",
+            "a photo of a dog sitting on a ledge in front of red wall and tree, macro style",
+            "a photo of side-view of a dog sitting on a ledge in front of red wall and tree, macro style",
+            "a photo of a dog sitting on a street, in front of lush trees, macro style"
+        ],
+        "test_images": ["dataset/dreambooth/dog/00.jpg","dataset/dreambooth/dog/01.jpg","dataset/dreambooth/dog/02.jpg", "dataset/dreambooth/dog/03.jpg","dataset/dreambooth/dog/04.jpg"],
+        "identifier": "<dog>",
+        "class": "dog",
+        "inserting_tokens" : ["<dog>"],
+        "initializer_tokens" : ["dog"]
+    }
+}   
