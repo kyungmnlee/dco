@@ -103,7 +103,7 @@ import os
 from safetensors.torch import load_file
 from reward_guidance import RGPipe
 
-pipe = RGPipe.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0" torch_dtype=torch.float16).to("cuda")    
+pipe = RGPipe.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0", torch_dtype=torch.float16).to("cuda")    
 lora_dir = "OUTPUT_DIR" # saved lora directory
 pipe.load_lora_weights(lora_dir)
 
