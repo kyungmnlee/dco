@@ -46,9 +46,9 @@ Note also that we use PEFT library as backend for LoRA training, make sure to ha
 
 We encourage to use **comprehensive caption** for text-to-image personlization, which provides descriptive visual details on the attributes, backgrounds, etc. Also we do not use rare token identifier (e.g., 'sks'), which may inherit the unfavorable semantics. We also train additional textual embeddings to enhance the subject fidelity. See paper for details.
 
-In `dataset/dreambooth/config.json`, we provide an example of comprehensive captions that we used:
+In `dataset/dreambooth/dog/config.json`, we provide an example of comprehensive captions that we used:
 ```
-'comprehensive': {
+'full_ti': {
     "images":[
         "dataset/dreambooth/dog/00.jpg",
         "dataset/dreambooth/dog/01.jpg",
@@ -82,7 +82,7 @@ To train the model, run following command:
 ```
 accelerate launch customize.py \
     --config_dir="dataset/dreambooth/dog/config.json" \
-    --config_name="comprehensive" \
+    --config_name="full_ti" \
     --output_dir="./output" \
     --learning_rate=5e-5 \
     --text_encoder_lr=5e-6 \
