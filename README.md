@@ -1,7 +1,7 @@
 # Direct Consistency Optimization for Compositional Text-to-Image Personalization
 This is an official implementation of paper 'Direct Consistency Optimization for Compositional Text-to-Image Personalization' 
 - [paper](https://arxiv.org/abs/2402.12004) 
-- [project page](https://dco-t2i.github.io/) 
+- [project page](https://kyungmnlee.github.io/dco/) 
 
 Our code is based on [diffusers](https://github.com/huggingface/diffusers), which we fine-tune [SDXL](https://huggingface.co/docs/diffusers/using-diffusers/sdxl) using LoRA from [peft](https://github.com/huggingface/peft) library. 
 
